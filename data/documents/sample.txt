@@ -1,0 +1,7 @@
+Sample Knowledge Base
+
+RAG stands for Retrieval-Augmented Generation. A RAG application retrieves relevant pieces of information from a document collection and supplies them to a language model as context before generating an answer.
+
+A typical RAG workflow has four main stages: document loading, text chunking, embedding/indexing, and retrieval plus generation. Chunking breaks long documents into smaller overlapping pieces. Embeddings convert those pieces into vectors. A vector store such as FAISS can then search for chunks that are semantically similar to a user's question.
+
+LangChain can be used to build the retrieval and generation components. LangGraph can orchestrate the application as a graph of steps such as retrieve and generate. A Streamlit application can provide a simple chat interface.
